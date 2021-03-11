@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Placement</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- header zone-->
+    <header class="header">
+        Font End Page
+    </header>
+    <section class="wrap">
+        <nav class="nav">
+            <a href="#" class="item">
+                <img src="./icons/icon1.png" alt="">
+                <span>HR Interview</span>
+            </a>
+            <a href="#" class="item">
+                <img src="./icons/icon2.png" alt="">
+                <span>Written Test</span>
+            </a>
+            <a href="#" class="item">
+                <img src="./icons/icon3.png" alt="">
+                <span>Interview Skills</span>
+            </a>
+            <a href="#" class="item">
+                <img src="./icons/icon4.png" alt="">
+                <span>Salary</span>
+            </a>
+            <a href="#" class="item">
+                <img src="./icons/icon5.png" alt="">
+                <span>Technique Skills</span>
+            </a>
+            <a href="#" class="item">
+                <img src="./icons/icon6.png" alt="">
+                <span>HR Interview</span>
+            </a>
+        </nav>
+        <!-- go module -->
+        <section class="go">
+            <img src="./images/go.png" alt="">
+        </section>
+    </section>
+
+    <!-- job instruction module -->
+    <section class="content">
+        <!-- header -->
+        <div class="con-hd">
+            <h4>
+                <span class="icon"><img src="./icons/i1.png" alt=""></span> Employement Placement
+            </h4>
+            <a href="" class="more">More>></a>
+        </div>
+        <!-- rotater module -->
+        <div class="get_job_focus">
+            <div class="swiper-container get_job_fo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic.png" alt=""></a>
+                        <p>Teach inteview skills</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/ldh.jpg" alt=""></a>
+                        <p>Teach inteview skills</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/3.jpg" alt=""></a>
+                        <p>Teach inteview skills</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </section>
+
+    <!-- charge study module -->
+    <section class="content study-con">
+        <!-- header -->
+        <div class="con-hd">
+            <h4>
+                <span class="icon"><img src="./icons/i1.png" alt=""></span>Study Program
+            </h4>
+            <a href="" class="more">More>></a>
+        </div>
+        <!-- rotater study module -->
+        <div class="study">
+            <div class="swiper-container study_fo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>American English, say bye to Chinese English</h5>
+                        <p>156 people study</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/pic2.png" alt="">
+                        <h5>American English, say bye to Chinese English</h5>
+                        <p>156 people study</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>American English, say bye to Chinese English</h5>
+                        <p>156 people study</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/pic2.png" alt="">
+                        <h5>American English, say bye to Chinese English</h5>
+                        <p>156 people study</p>
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- footer module -->
+    <footer class="footer">
+        <a href="#" class="item">
+            <img src="./icons/home.png" alt="">
+            <p>Home</p>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/ms.png" alt="">
+            <p>Interview</p>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/net.png" alt="">
+            <p>Onsite</p>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/user.png" alt="">
+            <p>Virture</p>
+        </a>
+    </footer>
+
+
+
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        (function() {
+            var swiper = new Swiper('.get_job_fo', {
+                slidesPerView: 2.2,
+                // space between slides
+                spaceBetween: 30,
+                // middle one is large
+                centeredSlides: true,
+                loop: true,
+                // pagination: {
+                //     el: '.swiper-pagination',
+                //     clickable: true,
+                // },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+            });
+        })();
+
+        (function() {
+            //if there is more than rotater, better fix swiper-container
+            var swiper = new Swiper('.study_fo', {
+                //number of slides
+                slidesPerView: 2.2,
+                spaceBetween: 20,
+                // pagination: {
+                //     el: '.swiper-pagination',
+                //     clickable: true,
+                // },
+            });
+        })();
+    </script>
+
+
+</body>
+
+</html>
